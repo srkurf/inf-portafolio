@@ -63,7 +63,7 @@ body {
 .inicio {
   background: #f3f5f8;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   color: #fff;
   display: flex;
@@ -185,7 +185,7 @@ footer {
   width: 100%;
   display: flex;
   padding: 30px 100px;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   background: #f3f5f8;
   .redes {
@@ -252,38 +252,28 @@ footer {
   }
 }
 @media screen and (max-width: 767px) {
-  .inf {
-    display: block;
-    flex-direction: column;
-    .inf-text {
-      display: block;
-      margin-top: 150px;
-      margin-left: -200px;
-      width: 800px;
-    }
-  }
-  .inicio .inf .inf-img {
-    .imgbox {
-      display: block;
-      max-width: 100%;
-      margin-left: 80px;
-      img {
-        width: 40%;
+  .inicio {
+    .inf {
+      flex-direction: column;
+      .inf-text {
+        margin-top: 150px;
+        margin-left: -200px;
       }
-      #splash {
-        display: none;
+      .inf-img {
+        .imgbox {
+          margin-left: 80px;
+          img {
+            width: 40%;
+          }
+          #splash {
+            display: none;
+          }
+        }
+      }
+      &::before {
+        height: 200px;
+        width: 200px;
       }
     }
-  }
-  footer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    bottom: 0px;
-    margin-right: 0px;
-  }
-  footer .redes a {
-    display: block;
-    margin-right: -100px;
   }
 }
