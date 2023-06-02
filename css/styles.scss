@@ -151,7 +151,7 @@ html {
       }
     }
     .inf-img {
-        z-index: 9;
+      z-index: 9;
       .imgbox {
         position: relative;
         width: 100%;
@@ -177,43 +177,43 @@ html {
     }
   }
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    padding: 30px 100px;
-    justify-content: space-between;
-    align-items: flex-end;
-    background: #f3f5f8;
-    .redes {
-        z-index: 2;
-        a {
-          font-size: 30px;
-          color: #3d535f;
-          margin: 25px 10px;
-          z-index: 1000;
-          transition: 0.35s;
-          &:hover {
-            color: #7f00ff; 
-            font-size: 3.5em;
-          }
-        }
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 30px 100px;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #f3f5f8;
+  .redes {
+    z-index: 2;
+    a {
+      font-size: 30px;
+      color: #3d535f;
+      margin: 25px 10px;
+      z-index: 1000;
+      transition: 0.35s;
+      &:hover {
+        color: #7f00ff;
+        font-size: 3.5em;
       }
+    }
+  }
 }
 @keyframes animateUser {
-    50% {
-      right: 30px;
-      top: -90px;
-    }
+  50% {
+    right: 30px;
+    top: -90px;
   }
-  @keyframes animate {
-    50% {
-      top: 49%;
-      left: 51%;
-      width: 105%;
-    }
+}
+@keyframes animate {
+  50% {
+    top: 49%;
+    left: 51%;
+    width: 105%;
   }
+}
 @keyframes object1 {
   50% {
     left: -13%;
@@ -224,5 +224,28 @@ footer{
   50% {
     left: 35%;
     top: 12%;
+  }
+}
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .nav-responsible {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #f3f5f8;
+    width: 220px;
+    ul {
+      display: block !important;
+      li {
+        border-bottom: 1px solid #7f00ff;
+        padding: 10px 0;
+      }
+    }
   }
 }

@@ -230,4 +230,27 @@ footer .redes a:hover {
     left: 35%;
     top: 12%;
   }
+}
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .nav-responsible {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #f3f5f8;
+    width: 220px;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid #7f00ff;
+    padding: 10px 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
