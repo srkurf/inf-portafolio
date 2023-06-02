@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SrKurf | David Arias - Portafolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Menu Header -->
+    <div class="contHeader">
+      <header>
+        <div class="logo">
+          <a href="#">SrKurf</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-responsible" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!-- Seccion Inicio -->
+    <section id="inicio" class="inicio">
+      <div class="inf">
+        <!-- INF Texto -->
+        <div class="inf-text">
+          <span class="decLinea">Hola soy</span>
+          <h1><span class="multiText"></span></h1>
+          <p>
+            Soy un desarrollador frontend apasionado por crear interfaces
+            atractivas y funcionales que mejoren la experiencia de usuario.
+          </p>
+          <div class="boton">
+            <button>Descargar CV</button>
+          </div>
+        </div>
+        <!-- INF Imagene -->
+        <div class="inf-img">
+          <div class="imgbox">
+            <img src="./img/pinturaMorada.png" alt="pintura" id="splash" width="150px"/>
+            <img src="./img/david-modified.png" alt="foto" width="150px"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/david.arias.srkurf" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/ariaskf_" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/arias.kf/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://github.com/srkurf" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+    </footer>
+     <!-- Script type -->
+     <script src="./script.js"></script>
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <script>
+       let typingEffect = new Typed(".multiText", {
+         strings: ["David Arias", "Programador", "FrontEnd", "Developer"],
+         loop: true,
+         typeSpeed: 100,
+         backSpeed: 80,
+         backDelay: 1500,
+       });
+     </script>
+  </body>
+</html>
