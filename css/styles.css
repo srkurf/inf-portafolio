@@ -251,9 +251,13 @@ footer .redes a:hover {
     padding: 10px 0;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
+  .inicio .inf {
+    display: flex;
+  }
   .inicio .inf .inf-text {
-    width: 400px;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .inicio .inf .inf-img .imgbox img {
     width: 150px;
@@ -263,6 +267,12 @@ footer .redes a:hover {
     display: none;
   }
   footer {
+    display: block;
     justify-content: center;
+    bottom: 100px;
+  }
+  .inicio .inf::before {
+    width: 200px;
+    height: 200px;
   }
 }/*# sourceMappingURL=styles.css.map */

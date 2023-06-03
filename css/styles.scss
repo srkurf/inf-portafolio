@@ -247,19 +247,30 @@ footer {
     }
   }
 }
-// 
-@media screen and (max-width: 700px){
-  .inicio .inf .inf-text{
-    width: 400px;
+//
+@media screen and (max-width: 650px) {
+  .inicio .inf {
+    display: flex;
+    .inf-text {
+      width: fit-content;
+    }
   }
-  .inicio .inf .inf-img .imgbox img{
-   width: 150px;
-   right: 100px;
+  .inicio .inf .inf-img .imgbox img {
+    width: 150px;
+    right: 100px;
   }
-  #splash{
+  #splash {
     display: none;
   }
-  footer{
+  footer {
+    display: block;
     justify-content: center;
+    bottom: 100px;
+  }
+  .inicio .inf {
+    &::before {
+      width: 200px;
+      height: 200px;
+    }
   }
 }
