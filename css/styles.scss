@@ -5,10 +5,6 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background: #f3f5f8;
-  background-size: cover;
-}
 //Estilos seccion BARRA DE NAVEGACION
 .contHeader {
   background: #f3f5f8;
@@ -63,7 +59,7 @@ body {
 .inicio {
   background: #f3f5f8;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: #fff;
   display: flex;
@@ -251,29 +247,19 @@ footer {
     }
   }
 }
-@media screen and (max-width: 767px) {
-  .inicio {
-    .inf {
-      flex-direction: column;
-      .inf-text {
-        margin-top: 150px;
-        margin-left: -200px;
-      }
-      .inf-img {
-        .imgbox {
-          margin-left: 80px;
-          img {
-            width: 40%;
-          }
-          #splash {
-            display: none;
-          }
-        }
-      }
-      &::before {
-        height: 200px;
-        width: 200px;
-      }
-    }
+// 
+@media screen and (max-width: 700px){
+  .inicio .inf .inf-text{
+    width: 400px;
+  }
+  .inicio .inf .inf-img .imgbox img{
+   width: 150px;
+   right: 100px;
+  }
+  #splash{
+    display: none;
+  }
+  footer{
+    justify-content: center;
   }
 }

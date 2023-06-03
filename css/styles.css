@@ -6,11 +6,6 @@
   padding: 0;
 }
 
-body {
-  background: #f3f5f8;
-  background-size: cover;
-}
-
 .contHeader {
   background: #f3f5f8;
   position: fixed;
@@ -66,7 +61,7 @@ body {
 .inicio {
   background: #f3f5f8;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color: #fff;
   display: flex;
@@ -256,25 +251,18 @@ footer .redes a:hover {
     padding: 10px 0;
   }
 }
-@media screen and (max-width: 767px) {
-  .inicio .inf {
-    flex-direction: column;
-  }
+@media screen and (max-width: 700px) {
   .inicio .inf .inf-text {
-    margin-top: 150px;
-    margin-left: -200px;
-  }
-  .inicio .inf .inf-img .imgbox {
-    margin-left: 80px;
+    width: 400px;
   }
   .inicio .inf .inf-img .imgbox img {
-    width: 40%;
+    width: 150px;
+    right: 100px;
   }
-  .inicio .inf .inf-img .imgbox #splash {
+  #splash {
     display: none;
   }
-  .inicio .inf::before {
-    height: 200px;
-    width: 200px;
+  footer {
+    justify-content: center;
   }
 }/*# sourceMappingURL=styles.css.map */
