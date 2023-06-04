@@ -224,6 +224,12 @@ footer {
     top: 12%;
   }
 }
+@keyframes object3 {
+  50%{
+    right: -2%;
+      bottom: 35%;
+  }
+}
 @media screen and (max-width: 980px) {
   nav {
     display: none;
@@ -251,13 +257,25 @@ footer {
 @media screen and (max-width: 650px) {
   .inicio .inf {
     display: flex;
+    width: auto;
     .inf-text {
       width: fit-content;
+      .decLinea{
+        color: #000;
+      }
+      h1{
+        font-size: 28px;
+      }
+      p{
+        color: #000;
+        width: fit-content;
+      }
     }
   }
   .inicio .inf .inf-img .imgbox img {
     width: 150px;
-    right: 100px;
+    right: 0px;
+    
   }
   #splash {
     display: none;
@@ -265,7 +283,10 @@ footer {
   footer {
     display: block;
     justify-content: center;
-    bottom: 100px;
+    bottom: 30px;
+    .redes{
+      width: 200px;
+    }
   }
   .inicio .inf {
     &::before {

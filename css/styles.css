@@ -228,6 +228,12 @@ footer .redes a:hover {
     top: 12%;
   }
 }
+@keyframes object3 {
+  50% {
+    right: -2%;
+    bottom: 35%;
+  }
+}
 @media screen and (max-width: 980px) {
   nav {
     display: none;
@@ -254,14 +260,26 @@ footer .redes a:hover {
 @media screen and (max-width: 650px) {
   .inicio .inf {
     display: flex;
+    width: auto;
   }
   .inicio .inf .inf-text {
     width: -moz-fit-content;
     width: fit-content;
   }
+  .inicio .inf .inf-text .decLinea {
+    color: #000;
+  }
+  .inicio .inf .inf-text h1 {
+    font-size: 28px;
+  }
+  .inicio .inf .inf-text p {
+    color: #000;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .inicio .inf .inf-img .imgbox img {
     width: 150px;
-    right: 100px;
+    right: 0px;
   }
   #splash {
     display: none;
@@ -269,7 +287,10 @@ footer .redes a:hover {
   footer {
     display: block;
     justify-content: center;
-    bottom: 100px;
+    bottom: 30px;
+  }
+  footer .redes {
+    width: 200px;
   }
   .inicio .inf::before {
     width: 200px;
