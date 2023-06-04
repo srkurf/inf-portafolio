@@ -310,6 +310,73 @@ footer .redes a:hover {
   width: 100%;
 }
 
+.skills {
+  background-color: #f3f5f8;
+  color: #fff;
+  padding: 90px 20px;
+}
+.skills .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+.skills h2 {
+  color: #7f00ff;
+  font-size: 48px;
+  font-family: "Righteous";
+  text-align: center;
+  padding: 20px 0px;
+}
+.skills .fila {
+  display: flex;
+}
+.skills .fila .col {
+  width: 50%;
+  padding: 0 20px;
+}
+.skills .fila .col h3 {
+  color: #7f00ff;
+  font-size: 28px;
+  font-family: "Righteous";
+  margin-bottom: 25px;
+}
+.skills .fila .col .skill {
+  color: #3d535f;
+}
+.skills .fila .col .skill .barra-skills .progreso {
+  color: #f3f5f8;
+}
+.skills .skills .skill > span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.skills .skill .barra-skills {
+  height: 8px;
+  width: 80%;
+  background-color: #042940;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skills .skill .barra-skills span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #7f00ff;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+.skills .skill .barra-skills .progreso {
+  background-color: #7f00ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+
 @keyframes animateUser {
   50% {
     right: 30px;
@@ -409,5 +476,14 @@ footer .redes a:hover {
   .sobremi .fila .col {
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .skills .fila {
+    display: block;
+  }
+  .skills .fila .col {
+    width: 100%;
+  }
+  .skills .fila .col .barra-skills {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
