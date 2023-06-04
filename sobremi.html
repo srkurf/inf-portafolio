@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SrKurf | David Arias - Portafolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Menu Header -->
+    <div class="contHeader">
+      <header>
+        <div class="logo">
+          <a href="#">SrKurf</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-responsible" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!-- Seccion Sobre Mi -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>SOBRE MI</h2>
+        <p>
+          <span>Hola, soy David Arias </span>Soy un estudiante de programación
+          apasionado y dedicado, con una gran habilidad para resolver problemas
+          complejos. Me encanta aprender nuevos lenguajes de programación y
+          explorar diferentes herramientas para mejorar mis habilidades. Mi
+          enfoque y determinación me permiten enfrentarme a desafíos y alcanzar
+          mis objetivos.
+        </p>
+        <div class="fila">
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                29/09/1999
+              </li>
+              <li>
+                <strong>Email</strong>
+                arias.kuf@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                www.srkurf.com
+              </li>
+              <li>
+                <strong>Cuidad</strong>
+                Guatemala, Guatemala
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="intereses">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Juegos</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-headphones"></i>
+                <span>Musica</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-futbol"></i>
+                <span>Deporte</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-windows"></i>
+                <span>Windows</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-apple"></i>
+                <span>Mac OS</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-android"></i>
+                <span>Android</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>
+        Descargar CV <i class="fa-solid fa-download"></i>
+        <span class="overlay"></span>
+      </button>
+    </section>
+  </body>
+</html>
