@@ -31,6 +31,6 @@ function efectoHabilidades(){
     }
 }
 
-window.onscroll = function(){
+window.onload = function(){
     efectoHabilidades();
 }
